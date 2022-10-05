@@ -8,4 +8,6 @@ public class Sonidos : MonoBehaviour
 	AudioSource source = gameObject.GetComponent<AudioSource>();
 	source.PlayOneShot(clip);
    }
+
+   
 }

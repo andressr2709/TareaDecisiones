@@ -23,12 +23,12 @@ public class Game : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cargarBancoPreguntas();
+        cargarBancoOpciones();
         opcionActual = opcionInicio;
-        setPregunta();
+        setOpciones();
     }
 
-    public void setPregunta()
+    public void setOpciones()
     {
         enunciado.text = opcionActual.enunciado;
         for (int i = 0; i < opciones.Length; i++)
@@ -39,7 +39,7 @@ public class Game : MonoBehaviour
     }
 
 
-    public void cargarBancoPreguntas()
+    public void cargarBancoOpciones()
     {
         try
         {
@@ -56,7 +56,7 @@ public class Game : MonoBehaviour
         }
     }
 
-    public void evaluarPregunta(int respuestaJugador)
+    public void evaluarOpciones(int respuestaJugador)
     {
         opcionActual = opcionActual.opciones[respuestaJugador];
         if (opcionActual.esFinal)
@@ -70,7 +70,7 @@ public class Game : MonoBehaviour
         }
         else
         {
-            setPregunta();
+            setOpciones();
         }
 
     }

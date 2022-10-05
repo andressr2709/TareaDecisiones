@@ -926,7 +926,7 @@ MonoBehaviour:
         m_MethodName: playSonido
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 9e3c3b6cff1bd094eba21893d5219564, type: 3}
+          m_ObjectArgument: {fileID: 8300000, guid: 6543df13c8e320f499ea3fa93cd9ad65, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0

@@ -18,7 +18,7 @@ public class CambiarEscena : MonoBehaviour
   }
 
   IEnumerator retrasoEscena(string sceneName){
-    yield return new WaitForSecondsRealtime(1f);
+    yield return new WaitForSecondsRealtime(1.5f);
     SceneManager.LoadScene(sceneName);
   }
 }
