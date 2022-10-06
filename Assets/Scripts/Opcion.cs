@@ -8,6 +8,7 @@ public class Opcion{
     public string enunciado;
     public Opcion[] opciones;
     public bool esFinal;
+    public string audio;
 
 
 }

@@ -5,26 +5,26 @@ using UnityEngine;
 
 public class SonidosJuego : MonoBehaviour
 {
-    public static readonly string[] audioName = {"bitewav.wav", "failwav.wav"};
+    //public static readonly string[] audioName = {"bitewav.wav", "failwav.wav"};
     [Header("Audio Stuff")]
     public AudioSource audioSource;
     public AudioClip audioClip;
     public string soundPath;
 
-    public void Awake()
+    public void playAudio(string audioName)
     {
         audioSource = gameObject.AddComponent<AudioSource>();
         soundPath = "file://" + Application.streamingAssetsPath + "/Sounds/";
-        StartCoroutine(LoadAudio());
+        StartCoroutine(LoadAudio(audioName));
     }
 
-    public IEnumerator LoadAudio()
+    public IEnumerator LoadAudio(string audioName)
     {
-        WWW request = GetAudioFromFile(soundPath, audioName[0]);
+        WWW request = GetAudioFromFile(soundPath, audioName);
         yield return request;
 
         audioClip = request.GetAudioClip();
-        audioClip.name = audioName[0];
+        audioClip.name = audioName;
         PlayAudioFile();
     }
 

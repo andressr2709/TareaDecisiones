@@ -14,17 +14,22 @@
               "opcionSeleccionada": "Regreso a la tienda a reclamar",
               "enunciado": "El señor te regresa el cambio y te pide disculpas. Quedaste con $75.",
               "opciones": [],
-              "esFinal": true
+              "esFinal": true,
+              "audio": "woohoowav.wav"
             },
             {
               "opcionSeleccionada": "Comprar Lotería de nuevo",
               "enunciado": "Perdiste todo tu dinero. No compres lotería.",
               "opciones": [],
-              "esFinal": true
+              "esFinal": true,
+              "audio": "failwav.wav"
             }
           ],
-          "esFinal": false
-        },{
+
+          "esFinal": false,
+          "audio": "clothwav.wav"
+        },
+        {
           "opcionSeleccionada": "Ingresarlos en el banco",
           "enunciado": "Decides quedarte con $50, ¿Qué haces ahora?",
           "opciones": [
@@ -32,19 +37,25 @@
               "opcionSeleccionada": "Donarlos a una fundación",
               "enunciado": "La fundación agradece tu donación y te regala una cena en un restaurante elegante. Quedaste con $100, pero ganaste una cena gratis.",
               "opciones": [],
-              "esFinal": true
-            },{
+              "esFinal": true,
+              "audio": "restaurantwav.wav"
+            },
+            {
               "opcionSeleccionada": "Ir al cine",
               "enunciado": "Te cobraron $15 de palomitas, $25 de la entrada y $10 de parqueo. Quedaste con $100. No te gustó la película.",
               "opciones": [],
-              "esFinal": true
+              "esFinal": true,
+              "audio": "filmwav.wav"
             }
           ],
-          "esFinal": false
+          "esFinal": false,
+          "audio": "coinwav.wav"
         }
       ],
-      "esFinal": false
-    },{
+      "esFinal": false,
+      "audio": "slipwav.wav"
+    },
+    {
       "opcionSeleccionada": "Comprar Comida",
       "enunciado": "No sabes que comer. Una niña te pide que si le compras una hamburguesa de $15 ¿Qué haces ahora?",
       "opciones": [
@@ -56,16 +67,21 @@
               "opcionSeleccionada": "Esperas un rato en el restaurante.",
               "enunciado": "El cocinero mira tu buena acción y los invita a ambos a un postre. Quedaste con $170.",
               "opciones": [],
-              "esFinal": true
-            },{
+              "esFinal": true,
+              "audio": "yummywav.wav"
+            },
+            {
               "opcionSeleccionada": "Me retiro del restaurante",
               "enunciado": "El taxi te cobra $30. Quedaste con $140.",
               "opciones": [],
-              "esFinal": true
+              "esFinal": true,
+              "audio": "taxiwav.wav"
             }
           ],
-          "esFinal": false
-        },{
+          "esFinal": false,
+          "audio": "yaywav.wav"
+        },
+        {
           "opcionSeleccionada": "No se la compro",
           "enunciado": "Compras unos nachos de $40, pero el queso estaba en mal estado. ¿Qué haces ahora?",
           "opciones": [
@@ -73,20 +89,25 @@
               "opcionSeleccionada": "Llamar una ambulancia.",
               "enunciado": "La ambulancia te cobra una cantidad masiva de dinero por el transporte. Debes $1200.",
               "opciones": [],
-              "esFinal": true
-            },{
+              "esFinal": true,
+              "audio": "ambulancewav.wav"
+            },
+            {
               "opcionSeleccionada": "Ir a la farmacia.",
               "enunciado": "Las medicinas te cuestan $150. Quedas con $10.",
               "opciones": [],
-              "esFinal": true
+              "esFinal": true,
+              "audio": "pillwav.wav"
             }
           ],
-          "esFinal": false
+          "esFinal": false,
+          "audio": "stomachwav.wav"
         }
       ],
-      "esFinal": false
+      "esFinal": false,
+      "audio": "bitewav.wav"
     }
   ],
-  "esFinal": false
-
+  "esFinal": false,
+  "audio": "chachingwav.wav"
 }

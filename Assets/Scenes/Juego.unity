@@ -458,7 +458,7 @@ MonoBehaviour:
           m_StringArgument: Final
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1737172980}
         m_TargetAssemblyTypeName: Sonidos, Assembly-CSharp
         m_MethodName: playSonido
         m_Mode: 2
@@ -587,7 +587,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Creditos
+  m_text: Final
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -778,15 +778,18 @@ MonoBehaviour:
     enunciado: 
     opciones: []
     esFinal: 0
+    audio: 
   opcionActual:
     opcionSeleccionada: 
     enunciado: 
     opciones: []
     esFinal: 0
+    audio: 
   botonOpciones:
   - {fileID: 836795194}
   - {fileID: 1733970466}
   btnCreditos: {fileID: 310487091}
+  sonidoOpcion: {fileID: 779300770}
 --- !u!4 &775383348
 Transform:
   m_ObjectHideFlags: 0
@@ -802,6 +805,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &779300770 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2578952120404621330, guid: 56704b8fc696d64469757ccac12baad4, type: 3}
+  m_PrefabInstance: {fileID: 16190963}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2149f917adecbae4d8978461a8ae8690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &836795194
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,9 +912,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2578952120404621330, guid: 56704b8fc696d64469757ccac12baad4, type: 3}
+      - m_Target: {fileID: 779300770}
         m_TargetAssemblyTypeName: SonidosJuego, Assembly-CSharp
-        m_MethodName: Awake
+        m_MethodName: playAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1265,7 +1279,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 2578952120404621330, guid: 56704b8fc696d64469757ccac12baad4, type: 3}
         m_TargetAssemblyTypeName: SonidosJuego, Assembly-CSharp
-        m_MethodName: Awake
+        m_MethodName: playAudio
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

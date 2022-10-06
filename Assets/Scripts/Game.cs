@@ -20,6 +20,7 @@ public class Game : MonoBehaviour
     public GameObject[] botonOpciones;
     public GameObject btnCreditos;
 
+    public SonidosJuego sonidoOpcion;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +60,7 @@ public class Game : MonoBehaviour
     public void evaluarOpciones(int respuestaJugador)
     {
         opcionActual = opcionActual.opciones[respuestaJugador];
+        sonidoOpcion.playAudio(opcionActual.audio);
         if (opcionActual.esFinal)
         {
             enunciado.text = opcionActual.enunciado;
